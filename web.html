@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Book Mirage</title>
+    <link rel="icon" type="image" href="book.jpg">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href=""><img src="book.jpg" alt="Book Mirage Logo" class="logo"></a>
+            <h1>Book Mirage</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="login.html">Login</a></li> 
+                <li><a href="about us.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="cart" id="cart-icon">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count" class="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-books">
+            <h2>Featured Books</h2>
+            <div class="book-container">
+                <div class="book-card">
+                    <img src="laura-barrett-illustrator-beloved-girls-book-cover.jpg" alt="Book 1">
+                    <h3>The Beloved Girls</h3>
+                    <p>by Harriet Evans</p>
+                    <p class="price">$6.95</p>
+                    <button class="add-to-cart" data-book="The Beloved Girls" data-price="6.95">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="download.png" alt="Book 2">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>by Harper Lee</p>
+                    <p class="price">$15.99</p>
+                    <button class="add-to-cart" data-book="To Kill a Mockingbird" data-price="15.99">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="1984.jpg" alt="Book 3">
+                    <h3>1984</h3>
+                    <p>by George Orwell</p>
+                    <p class="price">$15.99</p>
+                    <button class="add-to-cart" data-book="1984">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="sherlock holmes.jpg" alt="Book 4">
+                    <h4>Sharlock Holmes</h4>
+                    <p>by Sir Arthur Conan Doyle</p>
+                    <p class="price">$8.99</p>
+                    <button class="add-to-cart" data-book="Sharlock Holmes">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="81upklPRknL.AC_UF1000,1000_QL80.jpg" alt="Book 5">
+                    <h4>Diary of a Wimpy Kid</h4>
+                    <p>by Jeff Kinney</p>
+                    <p class="price">$13.99</p>
+                    <button class="add-to-cart" data-book="Diary of a Wimpy Kid">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="harry potter.jpg" alt="Book 6">
+                    <h4>Harry Potter Series</h4>
+                    <p>by J.K Rowling</p>
+                    <p class="price">$44.99</p>
+                    <button class="add-to-cart" data-book="Harry Potter Series">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="mind.jpg" alt="Book 6">
+                    <h4>Psychology of Money</h4>
+                    <p>by Morgan Housel</p>
+                    <p class="price">$10.99</p>
+                    <button class="add-to-cart" data-book="Psychology of Money">Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="power.jpg" alt="Book 6">
+                    <h4>The Power of Your Subconscious Mind</h4>
+                    <p>by Joseph Murphy</p>
+                    <p class="price">$5.99</p>
+                    <button class="add-to-cart" data-book="The Power of Your Subconscious Mind">Add to Cart</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span id="close-cart" class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Bookstore. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let cartCount = 0;
+        let cartItems = [];
+        let cartTotal = 0;
+
+        
+        function updateCartCount() {
+            const cartCountElement = document.getElementById('cart-count');
+            cartCountElement.textContent = cartCount;
+        }
+
+       
+        function updateCartModal() {
+            const cartItemsList = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+            cartItemsList.innerHTML = '';
+            cartTotal = 0;
+
+           
+            cartItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = ${item.name} - $${item.price};
+                cartItemsList.appendChild(li);
+                cartTotal += item.price;
+            });
+
+            
+            cartTotalElement.textContent = cartTotal.toFixed(2);
+        }
+
+        
+        function openCart() {
+            document.getElementById('cart-modal').style.display = 'block';
+        }
+
+        
+        function closeCart() {
+            document.getElementById('cart-modal').style.display = 'none';
+        }
+
+        
+        function addToCart(event) {
+            const bookName = event.target.getAttribute('data-book');
+            const bookPrice = parseFloat(event.target.getAttribute('data-price'));
+
+            cartCount++;
+            updateCartCount();
+
+            cartItems.push({ name: bookName, price: bookPrice });
+            updateCartModal();
+
+            console.log(${bookName} added to cart!);
+        }
+
+        
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', addToCart);
+        });
+
+        
+        document.getElementById('cart-icon').addEventListener('click', openCart);
+
+       
+        document.getElementById('close-cart').addEventListener('click', closeCart);
+
+        
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('cart-modal')) {
+                closeCart();
+            }
+        }
+    </script>
+</body>
+</html>
