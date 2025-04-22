@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Book Mirage</title>
     <link rel="stylesheet" href="login.css">
+    <script>
+        // Optional: Show an alert before redirecting
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent actual form submission
+            alert("Login successful! Redirecting...");
+            window.location.href = "web.html"; // Redirect to web.html
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -17,7 +25,8 @@
     <main>
         <section class="login-section">
             <h2>Login</h2>
-            <form action="submit_login.php" method="POST" class="login-form">
+            <!-- Form with JavaScript-based redirect -->
+            <form onsubmit="handleLogin(event)" class="login-form">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
 
