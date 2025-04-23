@@ -179,7 +179,7 @@ main {
 }
 
 .book-card button:hover {
-    background-color: #f75585;
+    background-color: rgb(182, 173, 173);
 }
 
 /* Cart Modal */
@@ -199,7 +199,7 @@ main {
     background-color: #fffafc;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid rgb(222, 141, 141);
+    border: 1px solid rgb(209, 194, 194);
     width: 80%;
     max-width: 500px;
     border-radius: 10px;
@@ -214,7 +214,7 @@ main {
 
 .close:hover,
 .close:focus {
-    color: #ff5f7e;
+    color: rgb(193, 184, 184);
     text-decoration: none;
     cursor: pointer;
 }
