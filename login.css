@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffe4ec; /* Light pink background */
+    background-color: white; /* Light pink background */
     color: #444;
 }
 
@@ -12,7 +12,7 @@ header {
     display: flex;
     align-items: center;
     padding: 15px 30px;
-    background-color: #f48fb1; /* Medium pink */
+    background-color: rgb(234, 218, 190); /* Medium pink */
     color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -55,12 +55,12 @@ main {
     max-width: 420px;
     width: 90%;
     text-align: center;
-    border: 1.5px solid #f48fb1;
+    border: 1.5px solid black;
 }
 
 .login-section h2 {
     margin-bottom: 25px;
-    color: #f48fb1;
+    color: rgb(234, 218, 190);
     font-size: 1.8rem;
     font-weight: 700;
 }
@@ -131,7 +131,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 12px;
-    background-color: #f48fb1;
+    background-color: rgb(234, 218, 190);
     color: #fff;
     font-size: 0.9rem;
     position: fixed;
