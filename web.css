@@ -34,10 +34,9 @@ header h1 {
     height: 40px;
     margin-right: 5px;
     margin-top: 10px;
-    display: inline-block;
-    float: left;
-
+    float: left; /* No need for display: inline-block */
 }
+
 
 /* Navigation */
 nav ul {
