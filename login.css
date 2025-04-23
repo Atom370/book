@@ -96,7 +96,7 @@ main {
 /* Button */
 .login-form button {
     padding: 12px;
-    background-color: #f48fb1;
+    background-color: rgb(234, 218, 190);
     color: white;
     font-size: 1rem;
     font-weight: 600;
@@ -107,7 +107,7 @@ main {
 }
 
 .login-form button:hover {
-    background-color: #ec6f99;
+    background-color: black;
 }
 
 /* Link Styles */
