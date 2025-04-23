@@ -3,8 +3,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #f0fdf4, #e6ffe6);
-    color: #333;
+    background: linear-gradient(to right, #ffe6f0, #e6fff9); /* pastel pink to mint gradient */
+    color: #444;
 }
 
 /* Header Styles */
@@ -12,9 +12,9 @@ header {
     display: flex;
     align-items: center;
     padding: 15px 30px;
-    background-color: #4CAF50;
+    background-color: #ffb6c1; /* soft pink */
     color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 header .logo-container {
@@ -28,11 +28,14 @@ header .logo-container img {
     width: 60px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #fff;
 }
 
 header h1 {
     font-size: 2rem;
     margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* Main Section Styles */
@@ -45,19 +48,21 @@ main {
 
 /* Login Section Styles */
 .login-section {
-    background-color: #ffffff;
+    background-color: #fff0f5; /* light lavender pink */
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
     max-width: 420px;
     width: 90%;
     text-align: center;
+    border: 2px dashed #ffc0cb; /* cute border */
 }
 
 .login-section h2 {
     margin-bottom: 25px;
-    color: #4CAF50;
+    color: #d63384; /* pastel rose */
     font-size: 1.8rem;
+    font-weight: 700;
 }
 
 /* Form Styles */
@@ -71,46 +76,49 @@ main {
     text-align: left;
     font-weight: 600;
     font-size: 0.95rem;
+    color: #6b4f4f;
 }
 
 .login-form input {
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     font-size: 1rem;
     outline: none;
-    transition: border 0.2s;
+    transition: all 0.3s ease;
 }
 
 .login-form input:focus {
-    border-color: #4CAF50;
-    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+    border-color: #ff69b4;
+    box-shadow: 0 0 0 4px rgba(255, 182, 193, 0.3);
 }
 
+/* Button */
 .login-form button {
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #ff69b4; /* hot pink */
     color: white;
     font-size: 1rem;
     font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .login-form button:hover {
-    background-color: #3e9743;
+    background-color: #ff1493;
 }
 
 /* Link Styles */
 .login-section p {
     margin-top: 10px;
     font-size: 0.95rem;
+    color: #7d4e57;
 }
 
 a {
-    color: #4CAF50;
+    color: #d63384;
     text-decoration: none;
     font-weight: bold;
 }
@@ -123,7 +131,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #ffb6c1; /* matching header */
     color: #fff;
     font-size: 0.9rem;
     position: fixed;
