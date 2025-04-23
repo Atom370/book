@@ -30,11 +30,13 @@ header h1 {
 }
 
 .logo-icon {
+    display: inline-block;
     width: 40px;
     height: 40px;
-    margin-right: 5px;
+    margin-right: 15px;
     margin-top: 10px;
-    float: left; /* No need for display: inline-block */
+    vertical-align: middle;
+     /* No need for display: inline-block */
 }
 
 
