@@ -78,14 +78,14 @@ nav ul li a:hover {
     top: 20px;
     right: 30px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     color: #4a4a4a;
 }
 
 .cart-count {
     background-color: white;
     border-radius: 50%;
-    padding: 2px 8px;
+    padding: 2px 5px;
     font-size: 14px;
     margin-left: 5px;
     vertical-align: middle;
