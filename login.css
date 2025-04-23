@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ffe6f0, #e6fff9); /* pastel pink to mint gradient */
+    background-color: #ffe4ec; /* Light pink background */
     color: #444;
 }
 
@@ -12,9 +12,9 @@ header {
     display: flex;
     align-items: center;
     padding: 15px 30px;
-    background-color: #ffb6c1; /* soft pink */
+    background-color: #f48fb1; /* Medium pink */
     color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 header .logo-container {
@@ -28,14 +28,14 @@ header .logo-container img {
     width: 60px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
 }
 
 header h1 {
     font-size: 2rem;
     margin: 0;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 /* Main Section Styles */
@@ -48,19 +48,19 @@ main {
 
 /* Login Section Styles */
 .login-section {
-    background-color: #fff0f5; /* light lavender pink */
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 25px rgba(244, 143, 177, 0.2);
     max-width: 420px;
     width: 90%;
     text-align: center;
-    border: 2px dashed #ffc0cb; /* cute border */
+    border: 1.5px solid #f48fb1;
 }
 
 .login-section h2 {
     margin-bottom: 25px;
-    color: #d63384; /* pastel rose */
+    color: #f48fb1;
     font-size: 1.8rem;
     font-weight: 700;
 }
@@ -76,7 +76,7 @@ main {
     text-align: left;
     font-weight: 600;
     font-size: 0.95rem;
-    color: #6b4f4f;
+    color: #555;
 }
 
 .login-form input {
@@ -89,14 +89,14 @@ main {
 }
 
 .login-form input:focus {
-    border-color: #ff69b4;
-    box-shadow: 0 0 0 4px rgba(255, 182, 193, 0.3);
+    border-color: #f48fb1;
+    box-shadow: 0 0 0 4px rgba(244, 143, 177, 0.2);
 }
 
 /* Button */
 .login-form button {
     padding: 12px;
-    background-color: #ff69b4; /* hot pink */
+    background-color: #f48fb1;
     color: white;
     font-size: 1rem;
     font-weight: 600;
@@ -107,18 +107,18 @@ main {
 }
 
 .login-form button:hover {
-    background-color: #ff1493;
+    background-color: #ec6f99;
 }
 
 /* Link Styles */
 .login-section p {
     margin-top: 10px;
     font-size: 0.95rem;
-    color: #7d4e57;
+    color: #666;
 }
 
 a {
-    color: #d63384;
+    color: #f48fb1;
     text-decoration: none;
     font-weight: bold;
 }
@@ -131,7 +131,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 12px;
-    background-color: #ffb6c1; /* matching header */
+    background-color: #f48fb1;
     color: #fff;
     font-size: 0.9rem;
     position: fixed;
