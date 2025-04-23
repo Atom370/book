@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f8f9fa;
+    color: #2c2c2c;
 }
 
 /* Header */
@@ -13,9 +13,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 header .logo-container {
@@ -23,75 +23,89 @@ header .logo-container {
     align-items: center;
 }
 
+header .logo-container img {
+    width: 40px;
+    height: 40px;
+}
+
 header .logo-container h1 {
-    margin-left: 10px;
-    font-size: 1.5rem;
+    margin-left: 12px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2e2e2e;
 }
 
 header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style: none;
     display: flex;
-}
-
-header nav ul li {
-    margin: 0 10px;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
 header nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    color: #4a4a4a;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #e0e0e0;
+    color: #000;
 }
 
 /* About Us Section */
 main {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
     background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
 }
 
 .about-us h2 {
-    color: black;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
     text-align: center;
 }
 
 .about-us p {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
 }
 
 .about-us h3 {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 1.6rem;
+    color: #444;
     margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .about-us ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .about-us ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    color: #555;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: black;
-    color: #fff;
-    margin-top: 20px;
-    font-size: 0.9rem;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 40px;
+    font-size: 0.95rem;
 }
