@@ -89,7 +89,7 @@ main {
 }
 
 .login-form input:focus {
-    border-color: #f48fb1;
+    border-color: black;
     box-shadow: 0 0 0 4px rgba(244, 143, 177, 0.2);
 }
 
@@ -118,7 +118,7 @@ main {
 }
 
 a {
-    color: #f48fb1;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
