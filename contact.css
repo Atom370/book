@@ -1,3 +1,45 @@
+/* Header Styles */
+header {
+    background-color: rgb(234, 218, 190); /* Dark background for header */
+    color: black; /* White text color for contrast */
+    padding: 20px;
+    text-align: center;
+}
+body {
+    background-color: rgb(238, 229, 212);
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+header .logo-container a {
+    margin-right: 15px; /* Space between logo and text */
+}
+
+header .logo-container img {
+    height: 70px;
+    width: 70px;
+}
+
+/* Center and Style "Book Mirage" Heading */
+.heading-container {
+    text-align: center; /* Center the heading text */
+    border: 3px solid #fff; /* White border around heading */
+    padding: 10px 20px;
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Keep it inline with logo */
+}
+
+.heading-container h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font for heading */
+    color: white; /* White text color */
+}
+
 /* Contact Section Styles */
 .contact-section {
     background-color: #fff;
@@ -11,7 +53,7 @@
 }
 
 .contact-section h2 {
-    color: #4CAF50;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -51,7 +93,7 @@
 .contact-form button {
     padding: 10px 15px;
     border: none;
-    background-color: #4CAF50;
+    background-color: rgb(234, 218, 190);
     color: white;
     font-size: 1rem;
     border-radius: 5px;
@@ -60,14 +102,14 @@
 }
 
 .contact-form button:hover {
-    background-color: #45a049;
+    background-color: black;
 }
 
 /* General Adjustments */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: rgb(234, 218, 190);
     color: white;
     margin-top: 30px;
     position: relative;

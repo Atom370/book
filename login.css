@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* Light pink background */
+    background-color: rgb(234, 227, 216); /* Light pink background */
     color: #444;
 }
 
@@ -60,7 +60,7 @@ main {
 
 .login-section h2 {
     margin-bottom: 25px;
-    color: rgb(234, 218, 190);
+    color: black;
     font-size: 1.8rem;
     font-weight: 700;
 }
@@ -89,14 +89,14 @@ main {
 }
 
 .login-form input:focus {
-    border-color: #f48fb1;
+    border-color: black;
     box-shadow: 0 0 0 4px rgba(244, 143, 177, 0.2);
 }
 
 /* Button */
 .login-form button {
     padding: 12px;
-    background-color: #f48fb1;
+    background-color: rgb(234, 218, 190);
     color: white;
     font-size: 1rem;
     font-weight: 600;
@@ -107,7 +107,7 @@ main {
 }
 
 .login-form button:hover {
-    background-color: #ec6f99;
+    background-color: black;
 }
 
 /* Link Styles */
@@ -118,7 +118,7 @@ main {
 }
 
 a {
-    color: #f48fb1;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
