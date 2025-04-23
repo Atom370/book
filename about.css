@@ -15,7 +15,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: white;
-    color: #fff;
+    color: black;
 }
 
 header .logo-container {
@@ -90,7 +90,7 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f48fb1;
+    background-color: black;
     color: #fff;
     margin-top: 20px;
     font-size: 0.9rem;
