@@ -1,3 +1,21 @@
+@media (max-width: 768px) {
+    .book-card {
+        width: 100%; /* Full width for smaller screens */
+        margin: 10px 0;
+    }
+}
+button[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    display: none;
+}
+button:hover[data-tooltip]::after {
+    display: block;
+}
 /* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
