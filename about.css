@@ -13,8 +13,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
 }
 
 header .logo-container {
@@ -31,7 +31,7 @@ header .logo-container h1 {
     margin-left: 15px;
     font-size: 2rem;
     font-weight: bold;
-    color: #000;
+    color: #ffffff;
 }
 
 header nav ul {
@@ -43,7 +43,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.1rem;
     padding: 6px 10px;
