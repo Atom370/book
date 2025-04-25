@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Book Mirage</title>
-    <link rel="stylesheet" href="login.css">
-    <script>
-        // Optional: Show an alert before redirecting
-        function handleLogin(event) {
-            event.preventDefault(); // Prevent actual form submission
-            alert("Login successful! Redirecting...");
-            window.location.href = "index.html"; // Redirect to web.html
-        }
-    </script>
+  <meta charset="UTF-8">
+  <title>Book Mirage - Home</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="bookmirage.jpg" type="image">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <a href="index.html"><img src="bookmirage.jpg" alt="Book Mirage Logo" class="logo" height="70px" width="70px"></a>
-            <h1>Book Mirage</h1>
-        </div>
-    </header>
+  <header>
+    <div class="logo-container">
+      <img src="bookmirage.jpg" alt="Logo" class="logo">
+      <h1>Book Mirage</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="web.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="login-section">
-            <h2>Login</h2>
-            <!-- Form with JavaScript-based redirect -->
-            <form onsubmit="handleLogin(event)" class="login-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+  <main>
+    <section class="intro">
+      <h2>Welcome to <span>Book Mirage 📚</span></h2>
+      <p>Your go-to destination for all kinds of books – from mystery to motivation!</p>
+      <p>Browse our collection and add your favorites to the cart.</p>
+      <a href="web.html" class="explore-btn">Explore Books</a>
+    </section>
+  </main>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-
-                <button type="submit">Login</button>
-            </form>
-            <p>Don't have an account? <a href="register.html">Sign up</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Book Mirage. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Book Mirage. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
