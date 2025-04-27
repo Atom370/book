@@ -1,3 +1,21 @@
+@media (max-width: 768px) {
+    .book-card {
+        width: 100%; /* Full width for smaller screens */
+        margin: 10px 0;
+    }
+}
+button[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    display: none;
+}
+button:hover[data-tooltip]::after {
+    display: block;
+}
 /* General Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -23,6 +41,9 @@ header h1 {
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 1px;
+}
+header h1:hover{
+    background-color: rgb(170, 163, 163);
 }
 .featured-books h2:hover{
     color: rgb(173, 166, 166);
@@ -78,14 +99,14 @@ nav ul li a:hover {
     top: 20px;
     right: 30px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     color: #4a4a4a;
 }
 
 .cart-count {
     background-color: white;
     border-radius: 50%;
-    padding: 2px 8px;
+    padding: 2px 5px;
     font-size: 14px;
     margin-left: 5px;
     vertical-align: middle;
@@ -179,8 +200,9 @@ main {
 }
 
 .book-card button:hover {
-    background-color: #f75585;
+    background-color: rgb(182, 173, 173);
 }
+
 
 /* Cart Modal */
 .cart-modal {
@@ -199,7 +221,7 @@ main {
     background-color: #fffafc;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid rgb(222, 141, 141);
+    border: 1px solid rgb(209, 194, 194);
     width: 80%;
     max-width: 500px;
     border-radius: 10px;
@@ -214,7 +236,7 @@ main {
 
 .close:hover,
 .close:focus {
-    color: #ff5f7e;
+    color: rgb(193, 184, 184);
     text-decoration: none;
     cursor: pointer;
 }
