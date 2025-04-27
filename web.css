@@ -202,38 +202,7 @@ main {
 .book-card button:hover {
     background-color: rgb(182, 173, 173);
 }
-#coupon-section {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-    text-align: center;
-}
 
-#coupon-code {
-    width: 80%;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-#apply-coupon {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#apply-coupon:hover {
-    background-color: #45a049;
-}
-
-#coupon-message {
-    margin-top: 10px;
-    color: red;
-    font-weight: bold;
-}
 
 /* Cart Modal */
 .cart-modal {
