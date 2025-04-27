@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* Light pink background */
+    background-color: rgb(207, 201, 201); /* Light pink background */
     color: #444;
 }
 
@@ -96,7 +96,7 @@ main {
 /* Button */
 .login-form button {
     padding: 12px;
-    background-color: rgb(234, 218, 190);
+    background-color: rgb(207, 201, 201);
     color: black;
     font-size: 1rem;
     font-weight: 600;
