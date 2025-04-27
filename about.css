@@ -3,13 +3,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    background-color: rgb(238, 229, 212);
-    color: #333;
-=======
     background-color: #fff;
     color: #111;
->>>>>>> 9e4aef87a5466b0560c64293fb25f847ab2d997c
 }
 
 /* Header */
