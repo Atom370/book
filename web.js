@@ -48,13 +48,25 @@ document.getElementById("apply-coupon").addEventListener("click", () => {
     }
 });
 
-function applyDiscount(discount) {
-    const originalTotal = parseFloat(cartTotal.textContent); // Get the current cart total
-    const discountedTotal = originalTotal - (originalTotal * discount / 100);
-    cartTotal.textContent = discountedTotal.toFixed(2); // Update the cart total
-}
+document.getElementById("apply-coupon").addEventListener("click", () => {
+    const couponCode = document.getElementById("coupon-code").value.toUpperCase(); // Convert input to uppercase
+    const couponMessage = document.getElementById("coupon-message");
+    const cartTotalElement = document.querySelector("#cart-total span"); // Span containing the total amount
 
+    const originalTotal = parseFloat(cartTotalElement.textContent); // Parse the cart total
+    const discountCode = "SAVE20"; // Coupon code
+    const discountPercentage = 20; // Discount percentage
 
+    if (couponCode === discountCode) {
+        const discountedTotal = originalTotal - (originalTotal * discountPercentage / 100);
+        cartTotalElement.textContent = discountedTotal.toFixed(2); // Update the total
+        couponMessage.textContent = `Coupon applied! You get ${discountPercentage}% off.`;
+        couponMessage.style.color = "green";
+    } else {
+        couponMessage.textContent = "Invalid coupon code.";
+        couponMessage.style.color = "red";
+    }
+});
 // Close cart modal
 closeCart.addEventListener("click", () => {
     cartModal.classList.remove("visible");
