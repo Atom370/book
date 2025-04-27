@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: rgb(238, 229, 212);
     color: #333;
 }
 
@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: white;
+    background-color: rgb(234, 218, 190);
     color: black;
 }
 
@@ -90,7 +90,7 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: black;
+    background-color: rgb(234, 218, 190);
     color: #fff;
     margin-top: 20px;
     font-size: 0.9rem;
