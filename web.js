@@ -30,6 +30,30 @@ function saveCart() {
 cartIcon.addEventListener("click", () => {
     cartModal.classList.add("visible");
 });
+const coupons = {
+    "DISCOUNT10": 10, // Coupon code and corresponding discount percentage
+    "SAVE20": 20
+};
+
+document.getElementById("apply-coupon").addEventListener("click", () => {
+    const couponCode = document.getElementById("coupon-code").value.toUpperCase(); // Convert input to uppercase
+    const couponMessage = document.getElementById("coupon-message");
+
+    if (coupons[couponCode]) {
+        const discount = coupons[couponCode];
+        couponMessage.textContent = `Coupon applied! You get ${discount}% off.`;
+        applyDiscount(discount); // Apply the discount
+    } else {
+        couponMessage.textContent = "Invalid coupon code.";
+    }
+});
+
+function applyDiscount(discount) {
+    const originalTotal = parseFloat(cartTotal.textContent); // Get the current cart total
+    const discountedTotal = originalTotal - (originalTotal * discount / 100);
+    cartTotal.textContent = discountedTotal.toFixed(2); // Update the cart total
+}
+
 
 // Close cart modal
 closeCart.addEventListener("click", () => {
