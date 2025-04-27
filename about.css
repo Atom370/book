@@ -17,15 +17,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-    padding: 10px 20px;
-    background-color: rgb(234, 218, 190);
-    color: black;
-=======
     padding: 20px 40px;
     background-color: #000000;
     border-bottom: 1px solid #000000;
->>>>>>> 9e4aef87a5466b0560c64293fb25f847ab2d997c
 }
 
 header .logo-container {
