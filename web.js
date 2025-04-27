@@ -13,7 +13,19 @@ let cart = [];
 // Open cart modal
 cartIcon.addEventListener("click", () => {
     cartModal.style.display = "block";
+    
 });
+cart.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = `${item.name} - $${item.price.toFixed(2)} x ${item.quantity}`;
+    cartItems.appendChild(li);
+
+    total += item.price * item.quantity;
+});
+
+cartTotal.textContent = total.toFixed(2);
+cartCount.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
+
 
 // Close cart modal
 closeCart.addEventListener("click", () => {
