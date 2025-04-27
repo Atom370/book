@@ -1,4 +1,4 @@
-Welcome to Online Book store— your gateway to the world of books! 
+Welcome to Online Book store— Book Mirage  your gateway to the world of books! 
 Explore our handpicked selection of fiction more. 
 Enjoy exclusive deals and a community of book lovers. 
 Dive into your next great read today!
