@@ -10,26 +10,30 @@ const addToCartButtons = document.querySelectorAll(".add-to-cart");
 // Cart data structure
 let cart = [];
 
+// Load cart from localStorage
+function loadCart() {
+    const storedCart = localStorage.getItem("cart");
+    if (storedCart) {
+        cart = JSON.parse(storedCart);
+        updateCart();
+    }
+}
+
+loadCart();
+
+// Save cart to localStorage
+function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
 // Open cart modal
 cartIcon.addEventListener("click", () => {
-    cartModal.style.display = "block";
-    
+    cartModal.classList.add("visible");
 });
-cart.forEach(item => {
-    const li = document.createElement("li");
-    li.textContent = `${item.name} - $${item.price.toFixed(2)} x ${item.quantity}`;
-    cartItems.appendChild(li);
-
-    total += item.price * item.quantity;
-});
-
-cartTotal.textContent = total.toFixed(2);
-cartCount.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
-
 
 // Close cart modal
 closeCart.addEventListener("click", () => {
-    cartModal.style.display = "none";
+    cartModal.classList.remove("visible");
 });
 
 // Add item to cart
@@ -37,6 +41,8 @@ addToCartButtons.forEach(button => {
     button.addEventListener("click", () => {
         const bookName = button.getAttribute("data-book");
         const bookPrice = parseFloat(button.getAttribute("data-price"));
+
+        if (!bookName || isNaN(bookPrice)) return;
 
         // Check if item is already in the cart
         const existingItem = cart.find(item => item.name === bookName);
@@ -48,10 +54,11 @@ addToCartButtons.forEach(button => {
         }
 
         updateCart();
+        saveCart();
     });
 });
 
-// Update cart
+// Update cart display
 function updateCart() {
     cartItems.innerHTML = ""; // Clear previous cart items
     let total = 0;
@@ -59,6 +66,15 @@ function updateCart() {
     cart.forEach(item => {
         const li = document.createElement("li");
         li.textContent = `${item.name} - $${item.price.toFixed(2)} x ${item.quantity}`;
+        
+        const removeButton = document.createElement("button");
+        removeButton.textContent = "Remove";
+        removeButton.addEventListener("click", () => {
+            cart = cart.filter(cartItem => cartItem.name !== item.name);
+            updateCart();
+            saveCart();
+        });
+        li.appendChild(removeButton);
         cartItems.appendChild(li);
 
         total += item.price * item.quantity;
@@ -67,11 +83,3 @@ function updateCart() {
     cartTotal.textContent = total.toFixed(2);
     cartCount.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
 }
-const removeButton = document.createElement("button");
-removeButton.textContent = "Remove";
-removeButton.addEventListener("click", () => {
-    cart = cart.filter(cartItem => cartItem.name !== item.name);
-    updateCart();
-});
-li.appendChild(removeButton);
-
