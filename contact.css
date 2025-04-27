@@ -1,12 +1,12 @@
 /* Header Styles */
 header {
-    background-color: rgb(234, 218, 190); /* Dark background for header */
+    background-color: black; /* Dark background for header */
     color: black; /* White text color for contrast */
     padding: 20px;
     text-align: center;
 }
 body {
-    background-color: rgb(238, 229, 212);
+    background-color: rgb(251, 247, 247);
 }
 
 header .logo-container {
