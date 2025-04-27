@@ -89,7 +89,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: white;
+    background-color: black;
     color: #fff;
 }
 
