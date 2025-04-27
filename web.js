@@ -67,3 +67,11 @@ function updateCart() {
     cartTotal.textContent = total.toFixed(2);
     cartCount.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
 }
+const removeButton = document.createElement("button");
+removeButton.textContent = "Remove";
+removeButton.addEventListener("click", () => {
+    cart = cart.filter(cartItem => cartItem.name !== item.name);
+    updateCart();
+});
+li.appendChild(removeButton);
+
