@@ -7,7 +7,7 @@
 button[data-tooltip]::after {
     content: attr(data-tooltip);
     position: absolute;
-    background: #333;
+    background: #090909;
     color: #fff;
     padding: 5px;
     border-radius: 3px;
