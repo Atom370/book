@@ -7,8 +7,8 @@
 button[data-tooltip]::after {
     content: attr(data-tooltip);
     position: absolute;
-    background: #090909;
-    color: #fff;
+    background: white;
+    color: black;
     padding: 5px;
     border-radius: 3px;
     display: none;
@@ -27,11 +27,11 @@ body {
 
 /* Header Styles */
 header {
-    background-color: black; 
-    color: rgb(232, 228, 228);
+    background-color: white; 
+    color: black;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 6px white;
 }
 
 header h1 {
