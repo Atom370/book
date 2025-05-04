@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+@keyframes fadeSlideUp {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -8,10 +8,51 @@
     transform: translateY(0);
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonial {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.testimonial:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.testimonial:nt
+
+.testimonials h2 {
+  animation: fadeSlideUp 1s ease-in-out;
+  animation-delay: 2.5s; /* Wait for 2.5 seconds before starting */
+  opacity: 0; /* Ensure it's hidden initially */
+
+}
+
+
+.logo-container img {
+  animation: bounce 1s infinite alternate ease-in-out;
+}
+
 
 .intro, .testimonials {
   animation: fadeIn 1s ease-in-out;
 }
+.testimonial {
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
 
 
 
